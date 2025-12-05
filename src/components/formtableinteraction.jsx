@@ -8,14 +8,18 @@ export default function CareerlinkFormTable(){
         [1, "Aryan Kumar", "Student", "LIT2025016"],
         [2, "Virottam Dutt Raturi", "Student", "LIT2025017"],
         [3, "Divyansh Bhargav", "Student", "LIT2025023"],
-        [4, "Lakshya Kumar", "Student", "LIT2025033"]
+        [4, "Lakshya Kumar", "Student", "LIT2025033"],
+        [5, "Pratyush Sharma", "Student", "LCS2025038"],
+        [6, "Akash", "Student", "LIT2025012"],
+        [7, "Vishnu", "Student", "LIT2025037"],
+        [8, "Pradeep Kumar", "Student", "LCS2025006"],
+        [9, "Shreyam", "Student", "LIT2025020"],
+        [10, "Atharva Chavan", "Student", "LIT2025014"]
     ]);
     let [ id , setId ] = useState(11);
     let updateTable = (name,proff,details) =>{
         setData([...userData, [id, name, proff, details]]);
         setId(id+1);
-        console.log(userData);
-        console.log([id, name, proff, details, 99]);
     }
 
     return(
